@@ -29,6 +29,12 @@ vars:
     property_ids: [244396510] # Array of properties to process
     start_date: "20241101" # Earliest date to load
     static_incremental_days: 3 # Number of days to scan and reprocess on each run
+  page_view_custom_parameters:
+    - name: "category"
+      value_type: "string_value"
+    - name: "tags"
+      value_type: "string_value"
+
 
 models:
   adv_dbt_ga4:
