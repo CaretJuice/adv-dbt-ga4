@@ -27,7 +27,7 @@ vars:
   ga4:
     source_project: "cj-data-warehouse-417316" # Project that contains raw GA4 data
     property_ids: [244396510] # Array of properties to process
-    start_date: "20241101" # Earliest date to load
+    start_date: "{{ env_var ('DBT_GA4_START_DATE') }}" # Earliest date to load
     static_incremental_days: 3 # Number of days to scan and reprocess on each run
     query_parameter_exclusions: ['msclkid', 'li_fat_id', 'token', 'hsa_net', 'hsa_cam', '_x_tr_hl', '_x_tr_pto', 'hsa_ver', 'x-craft-preview', '__hstc', 'hsa_ad', 'utm_term', 'hsa_acc', 'gclid', '__hsfp', 'gad_source', 'wbraid', 'gbraid', 'hsa_mt', 'hsa_tgt', 'utm_source', 'utm_medium', 'utm_content', 'nis', 'previewLLSession', 'li_giant', '_x_tr_sl', '_x_tr_tl', 'hsa_grp', 'utm_campaign', 'hsa_src', 'fbclid', '_hsenc', 'hsa_kw', 'trk', '_hsmi', '__hssc']
   page_view_custom_parameters:
