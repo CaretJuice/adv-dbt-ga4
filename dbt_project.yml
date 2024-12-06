@@ -34,6 +34,8 @@ vars:
       value_type: "string_value"
     - name: "tags"
       value_type: "string_value"
+    - name: "word_count"
+      value_type: "int_value"
 
 
 models:
