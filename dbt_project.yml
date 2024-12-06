@@ -33,6 +33,8 @@ vars:
   page_view_custom_parameters:
     - name: "category"
       value_type: "string_value"
+    - name: "word_count"
+      value_type: "int_value"
   
 models:
   adv_dbt_ga4:
