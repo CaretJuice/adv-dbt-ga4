@@ -2,11 +2,11 @@ This repo is part of the [Advanced dbt-GA4 course](https://caretjuice.com/course
 
 It's not intended to be usable on its own. If you are looking for free dbt and dbt-GA4 training, check out the [dbt-GA4 Setup course](https://caretjuice.com/courses/intro-to-dbt-ga4-on-demand/).
 
-## Implementation 03 Review End
+## Implementation 03 Instruct End
 
-This branch, `imp-03-review-end`, takes you to the end of the review section of the second lesson of Advanced dbt-GA4 Implementation.
+This branch, `imp-03-instruct-end`, takes you to the end of the Instruct section of the third lesson of Advanced dbt-GA4 Implementation.
 
-By the end of this lesson, you should have enabled staging event models from the dbt-GA4 package and built your own custom event staging models as needed. Obviously, the events that you enable or create will differ from the ones that I do in the lesson.
+By the end of this lesson, you should have created the `build_event_model` macro and called it from the `fct_ga4__event_page_view` model. This fact table is not yet partitioned.
 
 ## Course, Lesson, Section Branching Structure
 
