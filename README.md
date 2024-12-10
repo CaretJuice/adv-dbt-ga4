@@ -2,13 +2,9 @@ This repo is part of the [Advanced dbt-GA4 course](https://caretjuice.com/course
 
 It's not intended to be usable on its own. If you are looking for free dbt and dbt-GA4 training, check out the [dbt-GA4 Setup course](https://caretjuice.com/courses/intro-to-dbt-ga4-on-demand/).
 
-## Implementation 03 Expand End
+## Implementation 03 End
 
-This branch, `imp-03-expand-end`, takes you to the end of the Expand section of the third lesson of Advanced dbt-GA4 Implementation.
-
-By the end of this lesson, you should have explored Google's event documentation and how the dbt-GA4 package implements staging event models understanding some of the quirks of both documentation and implementation.
-
-With that knowledge, you should have manually added a few fields to your fact event models where the `build_event_model` macro can't do it for you.
+This branch, `imp-03-end`, takes you to the end of the third lesson of Advanced dbt-GA4 Implementation. This should be the same as `imp-03-expand-end`.
 
 ## Course, Lesson, Section Branching Structure
 
