@@ -17,6 +17,9 @@
 }}
 select
     {{ build_event_model('begin_checkout') }}
+    , currency 
+    , value 
+    , coupon 
 from {{ref('stg_ga4__event_begin_checkout')}}
 {% if is_incremental() %}
     where event_date_dt in ({{ partitions_to_replace | join(',') }})

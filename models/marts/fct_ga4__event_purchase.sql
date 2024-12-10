@@ -17,6 +17,12 @@
 }}
 select
     {{ build_event_model('purchase') }}
+    , coupon 
+    , currency 
+    , value 
+    , tax 
+    , shipping 
+    , affiliation
 from {{ref('stg_ga4__event_purchase')}}
 {% if is_incremental() %}
     where event_date_dt in ({{ partitions_to_replace | join(',') }})

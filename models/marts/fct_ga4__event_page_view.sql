@@ -17,6 +17,8 @@
 }}
 select
     {{ build_event_model('page_view') }}
+    , entrances
+    , value 
 from {{ref('stg_ga4__event_page_view')}}
 {% if is_incremental() %}
     where event_date_dt in ({{ partitions_to_replace | join(',') }})
