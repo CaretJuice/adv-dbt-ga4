@@ -16,10 +16,8 @@
     )
 }}
 select
-    {{ build_event_model('page_view') }}
-    , entrances
-    , value 
-from {{ref('stg_ga4__event_page_view')}}
+    {{ build_event_model('form_start') }}
+from {{ref('stg_ga4__event_form_start')}}
 {% if is_incremental() %}
     where event_date_dt in ({{ partitions_to_replace | join(',') }})
 {% endif %}

@@ -16,10 +16,12 @@
     )
 }}
 select
-    {{ build_event_model('page_view') }}
-    , entrances
-    , value 
-from {{ref('stg_ga4__event_page_view')}}
+    {{ build_event_model('add_payment_info') }}
+    , coupon
+    , currency
+    , payment_type 
+    , value
+from {{ref('stg_ga4__event_add_payment_info')}}
 {% if is_incremental() %}
     where event_date_dt in ({{ partitions_to_replace | join(',') }})
 {% endif %}

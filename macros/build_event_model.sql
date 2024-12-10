@@ -23,9 +23,7 @@
     {% if var( event_name+"_custom_parameters", none) != none %}
         {{ ga4.stage_custom_parameters( var(event_name+"_custom_parameters", none ) ) }}
     {% endif %}
-    {% if event_name in ('view_item_list', 'select_item', 'view_item', 'add_to_cart', 'add_to_wishlist'
-        , 'view_cart', 'remove_from_cart', 'begin_checkout', 'add_shipping_info', 'add_payment_info'
-        , 'purchase', 'refund', 'view_promotion', 'select_promotion') %}
+    {% if event_name in ('purchase') %}
         , total_item_quantity
         , purchase_revenue_in_usd
         , purchase_revenue 
