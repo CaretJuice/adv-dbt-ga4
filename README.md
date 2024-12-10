@@ -2,11 +2,11 @@ This repo is part of the [Advanced dbt-GA4 course](https://caretjuice.com/course
 
 It's not intended to be usable on its own. If you are looking for free dbt and dbt-GA4 training, check out the [dbt-GA4 Setup course](https://caretjuice.com/courses/intro-to-dbt-ga4-on-demand/).
 
-## Implementation 03 Instruct End
+## Implementation 03 Practice End
 
-This branch, `imp-03-instruct-end`, takes you to the end of the Instruct section of the third lesson of Advanced dbt-GA4 Implementation.
+This branch, `imp-03-practice-end`, takes you to the end of the Practice section of the third lesson of Advanced dbt-GA4 Implementation.
 
-By the end of this lesson, you should have created the `build_event_model` macro and called it from the `fct_ga4__event_page_view` model. This fact table is not yet partitioned.
+By the end of this lesson, you should have created fact models for all events that you want using the `build_event_model` macro and partitioned all of those models by date.
 
 ## Course, Lesson, Section Branching Structure
 
