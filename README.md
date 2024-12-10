@@ -2,9 +2,9 @@ This repo is part of the [Advanced dbt-GA4 course](https://caretjuice.com/course
 
 It's not intended to be usable on its own. If you are looking for free dbt and dbt-GA4 training, check out the [dbt-GA4 Setup course](https://caretjuice.com/courses/intro-to-dbt-ga4-on-demand/).
 
-## Implementation 03 End
+## Implementation 04 End
 
-This branch, `imp-03-end`, takes you to the end of the third lesson of Advanced dbt-GA4 Implementation. This should be the same as `imp-03-expand-end`.
+This branch, `imp-04-end`, takes you to the end of the fourth lesson of Advanced dbt-GA4 Implementation. In the fourth lesson, we focused on working with Git and did not make any code changes. As a result, this should be the same as `imp-03-end`.
 
 ## Course, Lesson, Section Branching Structure
 
