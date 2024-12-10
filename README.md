@@ -2,15 +2,11 @@ This repo is part of the [Advanced dbt-GA4 course](https://caretjuice.com/course
 
 It's not intended to be usable on its own. If you are looking for free dbt and dbt-GA4 training, check out the [dbt-GA4 Setup course](https://caretjuice.com/courses/intro-to-dbt-ga4-on-demand/).
 
-## Implementation 01 End
+## Implementation 02 End
 
-This branch, `imp-01-end`, takes you to the end of the first lesson of the implementation section for Advanced dbt-GA4.
+This branch, `imp-02-end`, takes you to the end of the second lesson of the implementation section for Advanced dbt-GA4.
 
-Because this lesson was concerned mainly with setting up your local environment, you should only have a a fresh install of dbt via the `dbt init` command.
-
-Any changes that we made during the lesson should have been undone by the end except for the base dbt files.
-
-Later on, there will be branches for each section corresponding to the sections of the lesson.
+There are actually no changes in this lesson from the previous lesson as we were working with external scripts to streamline implementation.
 
 ## Course, Lesson, Section Branching Structure
 

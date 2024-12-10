@@ -41,5 +41,3 @@ models:
       +schema: marts
     staging:
       +schema: stg
-    seeds:
-      +schema: seed
