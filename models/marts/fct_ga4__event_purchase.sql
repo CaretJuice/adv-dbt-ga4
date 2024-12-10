@@ -16,8 +16,8 @@
     )
 }}
 select
-    {{ build_event_model('page_view') }}
-from {{ref('stg_ga4__event_page_view')}}
+    {{ build_event_model('purchase') }}
+from {{ref('stg_ga4__event_purchase')}}
 {% if is_incremental() %}
     where event_date_dt in ({{ partitions_to_replace | join(',') }})
 {% endif %}
