@@ -2,6 +2,8 @@
     event_key 
     , client_key
     , page_key
+    , session_key 
+    , session_partition_key
     , user_id 
     , event_name 
     , event_date_dt 
