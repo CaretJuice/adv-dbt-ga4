@@ -1,6 +1,8 @@
 packages:
   - package: Velir/ga4
     version: 6.1.0
+  - package: bqbooster/dbt_bigquery_monitoring
+    version: 0.17.0
   - package: dbt-labs/dbt_utils
     version: 1.3.0
-sha1_hash: 22297c1d021a1411d2b49722112e45c107084a89
+sha1_hash: 04de75a83e28cc4c5d92412b1b1810dd6e0ca4ce

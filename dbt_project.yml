@@ -24,6 +24,9 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 
 vars:
+  bq_region: 'us'
+  cloud_audit_logs_table: 'cj-data-warehouse-417316.bigquery_logs.cloudaudit_googleapis_com_data_access'
+  input_gcp_projects: [ 'cj-data-warehouse-417316']
   adv_dbt_ga4:
     staging:
       events:
@@ -82,3 +85,9 @@ models:
           +enabled: true
     seeds:
       +schema: seed
+  dbt_bigquery_monitoring:
+    +schema: "monitoring"
+
+query-comment:
+  comment: '{{ dbt_bigquery_monitoring.get_query_comment(node) }}'
+  job-label: True # Use query comment JSON as job labels
