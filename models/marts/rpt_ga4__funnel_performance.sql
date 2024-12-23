@@ -10,10 +10,8 @@
 with ses as (
     select
         session_partition_key 
-        , session_partition_date as date 
         , session_default_channel_grouping as channel 
         , concat(session_source, ' / ', session_medium) as source_medium
-        , device_category
     from {{ref('dim_ga4__sessions_daily')}}
     {% if is_incremental() %}
         where session_partition_date in ({{ partitions_to_replace | join(', ') }})
