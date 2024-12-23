@@ -20,6 +20,8 @@ select
     , client_key
     , page_key
     , user_id 
+    , session_key 
+    , session_partition_key
     , event_name 
     , event_date_dt 
     , event_timestamp
