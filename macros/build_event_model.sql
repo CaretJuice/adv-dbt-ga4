@@ -4,6 +4,7 @@
     , page_key
     , session_key 
     , session_partition_key
+    , stream_id
     , user_id 
     , event_name 
     , event_date_dt 
@@ -19,6 +20,7 @@
     , geo_region
     , geo_city 
     , geo_metro
+    , session_number
     {% if var("default_custom_parameters", none) != none %}
         {{ ga4.stage_custom_parameters( var("default_custom_paramters", none ) ) }}
     {% endif %}

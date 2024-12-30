@@ -1,5 +1,5 @@
 packages:
-  - package: Velir/ga4
-    version: [">=6.1.0", "<6.2.0"]
+  - git: "https://github.com/Velir/dbt-ga4"
+    revision: a8daea004a5b5f61d21738bb022b0e428eae984f
   - package: bqbooster/dbt_bigquery_monitoring
     version: 0.17.0
