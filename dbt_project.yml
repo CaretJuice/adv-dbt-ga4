@@ -41,3 +41,7 @@ models:
       +schema: marts
     staging:
       +schema: stg
+
+seeds:
+  ga4:
+    +schema: seed
