@@ -80,3 +80,6 @@ models:
         stg_ga4__event_view_item:
           +enabled: true
 
+seeds:
+  ga4:
+    +schema: seed
